@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Log-in{% endblock %}
+
+{% block content %}
+  <h1>Log-In</h1>
+  <p>Please, use the following form to log-in:</p>
+  <form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="LOGIN"></p>
+  </form>
+
+  <footer class="container">
+    <p>&copy; ttgs.com &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Developed By:&nbsp Mukund Madhav,Rashmi Bhadoriya & Vijay Singh Parihar</p>
+  </footer>
+{% endblock %}
